@@ -2,7 +2,7 @@
   observabilityIncluded = true
 
 [package]
-  distribution = "2201.4.0"
+  distribution = "2201.3.2"
   name = "sample"
   org = "testyasas"
   version = "0.1.0"
