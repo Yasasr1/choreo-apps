@@ -325,6 +325,37 @@ dependencies = [
 
 [[package]]
 org = "ballerinax"
+name = "client.config"
+version = "1.0.1"
+dependencies = [
+	{org = "ballerina", name = "http"},
+	{org = "ballerina", name = "oauth2"}
+]
+
+[[package]]
+org = "ballerinax"
+name = "googleapis.gmail"
+version = "3.2.0"
+dependencies = [
+	{org = "ballerina", name = "http"},
+	{org = "ballerina", name = "io"},
+	{org = "ballerina", name = "jballerina.java"},
+	{org = "ballerina", name = "lang.array"},
+	{org = "ballerina", name = "lang.string"},
+	{org = "ballerina", name = "log"},
+	{org = "ballerina", name = "mime"},
+	{org = "ballerina", name = "os"},
+	{org = "ballerina", name = "regex"},
+	{org = "ballerina", name = "url"},
+	{org = "ballerinai", name = "observe"},
+	{org = "ballerinax", name = "client.config"}
+]
+modules = [
+	{org = "ballerinax", packageName = "googleapis.gmail", moduleName = "googleapis.gmail"}
+]
+
+[[package]]
+org = "ballerinax"
 name = "trigger.asgardeo"
 version = "0.4.1"
 dependencies = [
@@ -349,10 +380,25 @@ dependencies = [
 	{org = "ballerina", name = "http"},
 	{org = "ballerina", name = "log"},
 	{org = "ballerinai", name = "observe"},
-	{org = "ballerinax", name = "trigger.asgardeo"}
+	{org = "ballerinax", name = "googleapis.gmail"},
+	{org = "ballerinax", name = "trigger.asgardeo"},
+	{org = "wso2", name = "choreo.sendsms"}
 ]
 modules = [
 	{org = "testyasas", packageName = "sample", moduleName = "sample"}
+]
+
+[[package]]
+org = "wso2"
+name = "choreo.sendsms"
+version = "0.6.1"
+dependencies = [
+	{org = "ballerina", name = "http"},
+	{org = "ballerina", name = "log"},
+	{org = "ballerinai", name = "observe"}
+]
+modules = [
+	{org = "wso2", packageName = "choreo.sendsms", moduleName = "choreo.sendsms"}
 ]
 
 
