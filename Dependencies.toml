@@ -33,7 +33,7 @@ dependencies = [
 [[package]]
 org = "ballerina"
 name = "cloud"
-version = "2.3.2"
+version = "2.4.2"
 
 [[package]]
 org = "ballerina"
@@ -287,7 +287,7 @@ dependencies = [
 [[package]]
 org = "ballerina"
 name = "websub"
-version = "2.4.0"
+version = "2.5.0"
 dependencies = [
 	{org = "ballerina", name = "crypto"},
 	{org = "ballerina", name = "http"},
@@ -326,11 +326,12 @@ dependencies = [
 [[package]]
 org = "ballerinax"
 name = "trigger.asgardeo"
-version = "0.4.0"
+version = "0.4.1"
 dependencies = [
 	{org = "ballerina", name = "cloud"},
 	{org = "ballerina", name = "crypto"},
 	{org = "ballerina", name = "http"},
+	{org = "ballerina", name = "jballerina.java"},
 	{org = "ballerina", name = "log"},
 	{org = "ballerina", name = "websub"},
 	{org = "ballerinai", name = "observe"},
